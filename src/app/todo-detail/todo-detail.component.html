@@ -1,0 +1,18 @@
+<nav *ngIf="toDo" class="navbar navbar-light bg-light">
+  <a class="navbar-brand">{{toDo.task | uppercase}} Details</a>
+</nav>
+<div *ngIf="toDo" style="padding: 20px">
+  <div class="card w-50" style="padding: 20px">
+    <div class="card-subtitle">
+      <span>id: </span>{{toDo.id}}
+    </div>
+    <div class="card-title" style="padding-top: 10px">
+      <label>name:
+        <input [(ngModel)]="toDo.task" placeholder="task">
+      </label>
+    </div>
+  </div>
+  <form class="form-inline" style="padding-top: 40px">
+    <button (click)="save()" class="btn btn-outline-success my-2 my-sm-0 form-control mr-sm-2">save</button>
+    <button (click)="goBack()" class="btn btn-outline-info my-2 my-sm-0 form-control mr-sm-2">go back</button>
+  </form>

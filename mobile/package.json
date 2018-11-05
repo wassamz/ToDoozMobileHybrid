@@ -1,0 +1,26 @@
+{
+    "name": "TooDooz",
+    "displayName": "TooDooz",
+    "version": "1.0.0",
+    "description": "Basic To Do app based on Angular's Tour of Heroes tutorial. This time made into a Mobile Hybrid app using Apache Cordova",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Wassam",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^7.0.0",
+        "cordova-ios": "^4.5.5",
+        "cordova-plugin-whitelist": "^1.3.3"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    }
+}

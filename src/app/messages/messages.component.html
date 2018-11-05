@@ -1,0 +1,10 @@
+<div class="card-footer text-muted" *ngIf="messageService.messages.length">
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand">Messages</span>
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="messageService.clear()">Clear</button>
+  </nav>
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor='let message of messageService.messages'> {{message}} </li>
+  </ul>
+</div>

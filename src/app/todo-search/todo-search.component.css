@@ -1,0 +1,31 @@
+.search-result li {
+
+    background-color: white;
+    cursor: pointer;
+    list-style-type: none;
+  }
+  
+  .search-result li:hover {
+    background-color: rgb(26, 171, 243);
+  }
+  
+  .search-result li a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .search-result li a:hover {
+    color: white;
+  }
+  .search-result li a:active {
+    color: white;
+  }
+  #search-box {
+
+  }
+  
+  
+  ul.search-result {
+    margin-top: 0;
+    padding-left: 0;
+  }

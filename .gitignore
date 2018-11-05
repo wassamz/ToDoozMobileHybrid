@@ -1,0 +1,56 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# dependencies
+/node_modules
+/mobile/node_modules
+
+
+# Created by https://www.gitignore.io/api/xcode,macos,windows,apachecordova,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=xcode,macos,windows,apachecordova,visualstudiocode
+
+### ApacheCordova ###
+# Apache Cordova generated files and directories
+bin/*
+!/plugins
+!/plugins/android.json
+!/plugins/fetch.json
+/mobile/plugins
+/mobile/platforms
+/mobile/www/*
+

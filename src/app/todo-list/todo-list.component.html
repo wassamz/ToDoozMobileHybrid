@@ -1,0 +1,25 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">To Do List</a>
+  <form class="form-inline">
+    <input #toDoItem class="form-control mr-sm-2" type="search" placeholder="To Do Item" aria-label="Add To Do">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="add(toDoItem.value); toDoItem.value=''">Add</button>
+  </form>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <ul class="list-group">
+        <li *ngFor="let todo of toDoList" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+          <a routerLink="/detail/{{todo.id}}">
+            <span class="badge badge-primary badge-pill">{{todo.id}}</span>
+            <span class="font-large">&nbsp;&nbsp;{{todo.task}}</span>
+          </a>
+          <button class="btn btn-outline-dark" title="delete to do" (click)="delete(todo)">X</button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm">
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div id="search-component">
+
+  <form class="form-inline">
+    <input #searchBox id="search-box" (keyup)="search(searchBox.value)" class="form-control mr-sm-2" type="search" placeholder="Search Items"
+      aria-label="Search To Do Items">
+  </form>
+
+  <ul class="search-result">
+    <li *ngFor="let todo of toDoList$ | async">
+      <a routerLink="/detail/{{todo.id}}">
+        {{todo.task}}
+      </a>
+    </li>
+  </ul>
+</div>

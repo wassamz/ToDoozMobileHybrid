@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">Top 3 To Dos</a>
+  <app-todo-search></app-todo-search>
+</nav>
+
+
+<ul class="list-group">
+  <li *ngFor="let todo of toDoList" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+    <a routerLink="/detail/{{todo.id}}">
+      <span class="badge badge-primary badge-pill">{{todo.id}}</span>
+      <span class="font-large">&nbsp;&nbsp;{{todo.task}}</span>
+    </a>
+  </li>
+</ul>
